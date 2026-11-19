@@ -9,3 +9,8 @@ idag måndag den 16 nov
 leonardo: inte gjort något :I  komentar: mycket svårt jag förstår typ inte.... jag skrev om det finns med en bokstav som du redan har gissat så ska den säga till dig att du redan har gissat den... :(
 
 victor har skrivt typ 98 % av hududelen av prgramett och tillsamman med leonardo felsökjt kåden "det är itne ne bug utan an feature" 
+
+den 19 nov 2026 
+viktor gjorde klar spelet. nu har gjort  köra om funktionen med säker inmatning för j/n. 
+
+ leonardo gjorde typ inget ( ber om ur säckt för det ) han har skivigt lite om frågorna till spelet. leonardo la till ordet "handgemäng" till listan.  
