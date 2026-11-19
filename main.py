@@ -1,7 +1,4 @@
 import random 
-fel_gissningar = []
-gissningkvar = 10
-ut_str = ""
 ordlista = [
     "äpple", "hus", "bil", "hund", "katt",
     "skola", "lärare", "elev", "bok", "penna",
@@ -32,10 +29,20 @@ ordlista = [
     "vän", "familj", "mamma", "pappa", "syskon",
     "bror", "syster", "barn", "människa", "person",
     "pengar", "arbete", "tid", "kärlek", "glädje",
-    "musik", "film", "spel", "sport", "fotboll"
-] # det finns 150 st ord :) 
-ord = ordlista[random.randint(0,149)].lower()
+    "musik", "film", "spel", "sport", "fotboll","handgemäng"
+] # det finns 151 st ord :) 
 
+
+def igen_inmat(txt):
+    while True: 
+           x = input(txt).lower()
+           if x == "j": 
+               return 1
+           elif x == "n":
+               return 2 
+           else: 
+               print("svara med J/N tack.")
+               continue
 
 def inmat(txt):
     while True: 
@@ -52,6 +59,10 @@ def inmat(txt):
 # den ska ha säker inmatning bara stor bokstav stor eller liten ^^^^^
 # här är huvud programmet som faktist kört saken 
 while True:
+    fel_gissningar = []
+    gissningkvar = 10
+    ut_str = ""
+    ord = ordlista[random.randint(0,150)].lower()
     ut_str = ["*"] * len(ord)
     while True:
         if "*" not in ut_str:
@@ -76,5 +87,8 @@ while True:
             
         print("".join(ut_str))
 
-
-
+    if igen_inmat("har du lust att köra igen  j/n ??? ") == 1:
+        continue
+    else:
+        break
+print("Programet avslutades")
